@@ -9,7 +9,7 @@ class ThemeBase extends AssetBundle
     public $baseUrl = '@web';
 
     public $depends = [
-        'yii\web\JqueryAsset',
+        //'yii\web\JqueryAsset',
         //'yii\bootstrap\BootstrapAsset',
         //'yii\bootstrap\BootstrapPluginAsset',
     ];
