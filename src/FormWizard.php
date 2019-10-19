@@ -977,7 +977,7 @@ JS;
         $this->_bsVersion == 3
             ?
             Bs3Assets::register($view)
-            : Bs4Assets::register($view);
+            : Bs3Assets::register($view);
 
         //is supported theme
         if (in_array($themeSelected, array_keys($this->themesSupported))) {
