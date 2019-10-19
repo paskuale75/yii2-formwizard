@@ -472,7 +472,7 @@ class FormWizard extends Widget
 
         //is bs4 version
         $isBs4 = class_exists(BS4Asset::class);
-        $this->_bsVersion = $isBs4 ? 4 : 3;
+        $this->_bsVersion = $isBs4 ? 3 : 3;
     }
 
     /**
@@ -977,7 +977,7 @@ JS;
         $this->_bsVersion == 3
             ?
             Bs3Assets::register($view)
-            : Bs3Assets::register($view);
+            : Bs4Assets::register($view);
 
         //is supported theme
         if (in_array($themeSelected, array_keys($this->themesSupported))) {
