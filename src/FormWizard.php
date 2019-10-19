@@ -985,7 +985,7 @@ JS;
                 $this->_bsVersion . '\Theme' .
                 $this->themesSupported[$themeSelected] . 'Asset';
 
-            //$themeAsset::register($view);
+            $themeAsset::register($view);
         }
     }
 }
